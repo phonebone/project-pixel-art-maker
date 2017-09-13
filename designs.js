@@ -51,12 +51,18 @@ function colorCell(e){
 
 // Remove the grid from the DOM if it exists:
 function clearGrid(){
-  console.log(canvas.innerHTML);
   const tableRows = canvas.querySelectorAll('tr');
   // if a table exists
   if(tableRows.length > 0){
-    // for every row
-    tableRows.forEach(function(tableRow){
+    // make array of Nodelist
+    let trArray = new Array(tableRows.length);
+    let numRows = tableRows.length;
+    while(numRows) {
+      numRows--;
+      trArray[numRows] = tableRows[numRows];
+    }
+    // for every existing table row
+    trArray.forEach(function(tableRow){
       // remove the row from the DOM
       canvas.removeChild(tableRow);
     });
