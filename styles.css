@@ -1,38 +1,113 @@
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-moz-selection {
+    background: #b5e7f7;
+    color: #222;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b5e7f7;
+    color: #222;
+    text-shadow: none;
+}
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Work Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+    background-color: #333;
+    color: #0f0;
+}
+
 body {
-    text-align: center;
+  margin: 0;
+  text-align: center;
+}
+
+input {
+  font-family: 'Work Sans', sans-serif;
+}
+
+header {
+  padding-top: 2rem;
+  background-color: #333;
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 40px;
+  margin: 0.2em;
+  color: #fff;
 }
 
 h2 {
-    margin: 1em 0 0.25em;
+  padding: .75em 0 0.25em;
+  margin: 0;
+  font-weight: 400;
 }
 
-h2:first-of-type {
-    margin-top: 0.5em;
+#sizePicker {
+  padding: 1em 0;
 }
-
 table, tr, td {
-    border: 1px solid black;
+  border: 1px solid #333;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 tr {
-    height: 20px;
+  height: 20px;
 }
 
 td {
-    width: 20px;
+  width: 20px;
 }
 
 input[type=number] {
-    width: 6em;
+  width: 4em;
+  font-size: 1rem;
+  margin-right: 1em;
+  padding-left: 4px;
+  background-color: #222;
+  color: #0f0;
+  border-color: #111;
+  border-style: inset;
+}
+
+input[type=submit] {
+  display: inline-block;
+  padding: 0.5em;
+  border: thick outset #0f0;
+  border-radius: 0.5em;
+  background-color: #0f0;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Press Start 2P', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input[type=submit]:active {
+  border-style: inset;
+}
+
+input[type=color] {
+  border: 1px solid #fff;
+  padding: 0;
+  margin: 1em;
+  width: 6em;
+  height: 6em;
 }

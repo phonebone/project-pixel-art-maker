@@ -3,29 +3,35 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Pixel Art Maker!</title>
+    <title>Pixel Art Painter!</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P|Work+Sans">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <header>
+      <h1>Pixel Art Painter</h1>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
+      <h2>Choose Grid Size:</h2>
+      <form id="sizePicker">
         <label for="input_width">Grid width:</label>
-        <input type="number" id="input_width" name="width" min="1" value="12">
+        <input type="number" id="input_width" name="width" min="1" value="34">
         <label for="input_height">Grid height:</label>
-        <input type="number" id="input_height" name="height" min="1" value="9">
+        <input type="number" id="input_height" name="height" min="1" value="23">
         <input type="submit" value="Create!">
-    </form>
+      </form>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+      <div id="color">
+        <h2>Pick A Color:</h2>
+        <input type="color" id="colorPicker">
+      </div>
+    </header>
 
-    <h2>Design Canvas</h2>
-    <table id="pixel_canvas"></table>
+    <main>
+      <h2>Design Canvas:</h2>
+      <table id="pixel_canvas"></table>
+    </main>
 
     <script src="designs.js"></script>
 </body>

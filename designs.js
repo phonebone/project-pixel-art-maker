@@ -1,6 +1,6 @@
 const form = document.getElementById('sizePicker');
 let canvas,
-    color = '#eb5c81',
+    color = '#00ff00',
     grid = {
       width: 1,
       height:1
